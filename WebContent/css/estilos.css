@@ -1,0 +1,215 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font: 14px sans-serif;
+    outline: none;
+}
+ @font-face {
+            font-family: f2;
+            src: url(../fonts/f2.ttf);
+
+        }
+header{
+	display: block;
+	width: 100%;
+	float: right;
+    background-color: rgba(0,0,0,0.3);
+    overflow: auto;
+    font: sans-serif;
+}
+body{
+	background-image: url(../imagens/fundo/original.jpg);
+    background-attachment: fixed;
+	color: azure;
+}
+#cadastro{
+    height: 20px;
+}
+#logosite{
+	border: 0;
+	background-repeat: no-repeat;
+}
+
+fieldset{
+    margin-top: 40px;
+}
+
+legend{
+    color: whitesmoke;
+}
+
+input{
+    color: darkgray;
+    
+}
+
+select{
+    color: red;
+}
+#demotext {
+color: #FFF;
+
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
+
+}
+
+
+//* cabeçalho */
+header{
+    background-color: rgba(0, 0, 0, 0.2);
+       overflow: auto;
+}
+
+
+#logo{
+    font-family: logo;
+    float: left;
+    color: whitesmoke;
+    font-size: 15px;
+    margin: 20px;
+}
+#menu{
+    float:right;
+
+}
+#menu a{
+    display: inline-block;
+    padding: 24px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition:background-color 0.5s,color 0.5s;
+}
+#menu a:hover{
+    background-color: whitesmoke;
+    color:black;
+    
+}
+
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px;    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+.formularioCadastro{
+    width: 800px;
+    margin: 10px auto;
+}
+
+.formularioCadastro label{
+    width: 20%;
+    float: left;
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.formularioCadastro input{
+    width: 80%;
+    float: left;
+}
+.formularioCadastro Select{
+    width: 80%;
+    float: left;
+}
+#cpf{
+      width: 80%;
+}
+#genero{
+      width: 80%;    
+   
+   
+     float:left;
+}
+
+}
+#Estado{
+       width: 80%;
+    float: left;
+}
+#cidade{
+     width: 80%;
+    float: none;
+}
+#semana{
+     width: 0%;
+    float: left;
+    
+}
+
+.horarios label{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.horarios input{
+    background-color: white;
+    float: left;
+    margin-right: 10px;
+    width: auto;
+}
+
+.btn{
+    width: 100px !important;
+    margin-bottom: 20px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+    opacity: 0.8;
+   color: white;
+   text-align: center;
+}

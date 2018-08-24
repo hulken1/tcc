@@ -1,0 +1,202 @@
+<html>
+ <head>
+ <title> Cadastro Area 21 </title>
+ <meta name="description" content="">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    
+    <!--  Importar BootSrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+
+ </head>
+
+ <body>
+  <div id="background">
+     
+      </div>
+<!-- Cabeçalho -->
+ <!--   <header>-->
+
+        <!-- Logo -->
+        <a href="index.html"><img src="imagens/logo/logo5.png">
+        
+        </a>
+  
+  
+        <nav id="menu">
+            
+           
+            <a href="contato.html">Contato</a>
+
+        </nav>
+
+  
+  <br/>
+<div id="cadastro"> 
+<form action="Script_do_Formulario.php" method="post" class="formularioCadastro">
+
+<!-- DADOS PESSOAIS-->
+<fieldset>
+ <legend>Dados Pessoais</legend>
+    <label>Nome: </label>
+     <input type="text" class="form-control input-sm" id="Nome" placeholder="Nome">
+   
+    <label for="sobrenome">Sobrenome: </label>
+  
+     <input type="text" class="form-control input-sm" id="sobrenome" placeholder="Sobrenome">
+
+    <label>Nascimento: </label>
+  
+    <input type="date" name="dia" size="2" maxlength="2" value="dd"
+    class="form-control input-sm" id="dia" placeholder="dia"
+    > 
+   
+ 
+    <label for="Jogo Favorito">Jogo Favorito: </label>
+   
+     <input type="text" class="form-control input-sm" id="Jogo Favorito
+     " placeholder="Jogo Favorito">
+ 
+    <label>CPF:</label>
+ 
+    <input type="text" name="cpf" size="14" maxlength="9"class="form-control" id="cpf" placeholder="CPF">   
+  
+    <label for="Genero2" id="Genero2">Genero: </label>
+  
+    <select name="Genero"class="form-control input-sm" id="Genero" placeholder="Genero"> 
+    <option value="M">Masculino</option> 
+    <option value="F">Feminino</option>  
+   </select>
+ 
+  
+    <label for="UF">UF:</label>
+  
+    <select name="Estado" class="form-control input-sm" id="Estado" placeholder="Estado"> 
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+    
+   </select>
+  
+    <label for="cidade2">Cidade: </label>
+ 
+    <input type="text" name="cidade" class="form-control input-sm" id="cidade" placeholder="cidade"> 
+  
+</fieldset>
+      <fieldset class="horarios">
+          <legend>Disponibilidade durante a semana</legend>
+          
+      
+            <label>
+            <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Dia
+            </label>  
+
+            <label>
+            <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Tarde
+            </label>  
+
+            <label>
+            <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Noite
+            </label>  
+
+        </fieldset>
+        
+        
+        
+        <fieldset class="horarios">
+          <legend>Disponibilidade durante o final de semana</legend>
+          
+      
+            <label>
+            <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Dia
+            </label>  
+
+            <label>
+            <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Tarde
+            </label>  
+
+            <label>
+            <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Noite
+            </label>  
+
+        </fieldset>
+
+ 
+         
+
+
+<br />
+
+
+<!-- DADOS DE LOGIN -->
+<fieldset>
+ <legend>Dados de login</legend>
+ <table cellspacing="10" >
+  
+    <label for="email">E-mail: </label>
+   
+    <input type="text" name="email" class="form-control">
+   
+  
+    <label for="imagem">Imagem de perfil:</label>
+   
+    <input type="file" name="imagem"  >
+
+   
+    <label for="login">Login de usuário: </label>
+  
+    <input type="text" name="login" class="form-control input-sm" id="login" placeholder="login">
+ 
+    <label for="pass">Senha: </label>
+   
+    <input type="password" name="pass" class="form-control input-sm" id="password" placeholder="password">
+  
+    <label for="passconfirm">Confirme a senha: </label>
+  
+    <input type="password" name="passconfirm"class="form-control input-sm" id="passconfirm" placeholder=" Repetir password">
+   
+ </table>
+</fieldset>
+<br/>
+<input type="submit" class="btn btn-danger btn" >
+<input type="reset" value="Limpar" class="btn btn-danger btn">
+
+</form>
+
+<div class="footer">
+  <p>© 2018 Copyright:Adolfo Adenilson Marcos Sergio JAVA noturno</p>
+</div>
+ <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </body>
+ 
+</html>
