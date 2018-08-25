@@ -16,6 +16,7 @@ body{
 }
 /*navbar*/
 .barraleft {
+    margin: 10px;
     float: right;
      position: fixed;
   right: 0;
@@ -29,7 +30,7 @@ body{
 }
 
 .navbar-nav>li>a:hover{
-    color: white;
+    color: lightgray;
 }
 
 .dropdown-menu>li>a{
@@ -37,6 +38,7 @@ body{
 }
 .dropdown-menu>li>a:hover{
     background: none;
+    color: lightgray!important;
 }
 
 
@@ -45,15 +47,16 @@ body{
 }
 
 .navbar-nav>li{
-    background-color: gray;
-    opacity: 80;
-    filter: alpha(opacity=10);
+       background-color: transparent;
+        opacity: 1;
+    filter: alpha(opacity=20);
 }
 
 
 
 .nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
     background-color: transparent;
+    color: lightgray;
 }
 
 .dropdown ul.dropdown-menu{
