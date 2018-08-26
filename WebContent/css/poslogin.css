@@ -1,89 +1,82 @@
-
-body{
-	background-image: url(../imagens/fundo/original.jpg);
-    background-attachment: fixed;
-	color: azure;
-}
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-    opacity: 0.8;
-   color: white;
-   text-align: center;
-}
 /*navbar*/
+
 .barraleft {
     margin: 10px;
     float: right;
-     position: fixed;
-  right: 0;
-  width: auto;
-   color: aqua;
-   
-    
+    position: fixed;
+    right: 0;
+    width: auto;
+    color: aqua;
 }
-.navbar-nav>li>a{
+
+.navbar-nav>li>a {
     color: whitesmoke;
 }
 
-.navbar-nav>li>a:hover{
+.navbar-nav>li>a:hover {
     color: lightgray;
 }
 
-.dropdown-menu>li>a{
+.dropdown-menu>li>a {
     color: white!important;
 }
-.dropdown-menu>li>a:hover{
+
+.dropdown-menu>li>a:hover {
     background: none;
     color: lightgray!important;
 }
 
-
-.navtop{
+.navtop {
     float: left;
 }
 
-.navbar-nav>li{
-       background-color: transparent;
-        opacity: 1;
+.navbar-nav>li {
+    background-color: transparent;
+    opacity: 1;
     filter: alpha(opacity=20);
 }
 
-
-
-.nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+.nav>li>a:hover,
+.nav>li>a:focus,
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
     background-color: transparent;
     color: lightgray;
 }
 
-.dropdown ul.dropdown-menu{
-   background-color: transparent;
-        opacity: 1;
+.dropdown ul.dropdown-menu {
+    background-color: transparent;
+    opacity: 1;
     filter: alpha(opacity=20);
 }
 
+.nav>li>a:hover,
+.nav>li>a:focus,
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background-color: red;
+}
 
-.nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
-    background color: red;
-}
 .dropdown {
-    background:#fff;
-    border:1px solid #ccc;
-    border-radius:4px;
-    width:300px;    
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
 }
+
 .dropdown-menu>li>a {
-    color:#428bca;
+    color: #428bca;
 }
+
 .dropdown ul.dropdown-menu {
-    border-radius:4px;
-    box-shadow:none;
-    margin-top:20px;
-    width:300px;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-top: 20px;
+    width: 300px;
 }
+
 .dropdown ul.dropdown-menu:before {
     content: "";
     border-bottom: 10px solid #fff;
@@ -94,6 +87,7 @@ body{
     right: 16px;
     z-index: 10;
 }
+
 .dropdown ul.dropdown-menu:after {
     content: "";
     border-bottom: 12px solid #ccc;

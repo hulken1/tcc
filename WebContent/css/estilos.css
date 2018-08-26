@@ -1,149 +1,129 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font: 14px sans-serif;
-    outline: none;
-}
- @font-face {
-            font-family: f2;
-            src: url(../fonts/f2.ttf);
-
-        }
-header{
-	display: block;
-	width: 100%;
-	float: right;
-    background-color: rgba(0,0,0,0.3);
+header {
+    display: block;
+    width: 100%;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.3);
     overflow: auto;
     font: sans-serif;
 }
-body{
-	background-image: url(../imagens/fundo/original.jpg);
-    background-attachment: fixed;
-	color: azure;
-}
-#cadastro{
+
+#cadastro {
     height: 20px;
 }
-#logosite{
-	border: 0;
-	background-repeat: no-repeat;
-}
 
-fieldset{
+fieldset {
     margin-top: 40px;
 }
 
-legend{
+legend {
     color: whitesmoke;
 }
 
-input{
+input {
     color: darkgray;
-    
 }
 
-select{
+select {
     color: red;
 }
+
 #demotext {
-color: #FFF;
-
-text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
-
+    color: #FFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
 }
 
 
-//* cabeçalho */
-header{
+/* cabeçalho */
+
+header {
     background-color: rgba(0, 0, 0, 0.2);
-       overflow: auto;
+    overflow: auto;
 }
 
-
-#logo{
-    font-family: logo;
-    float: left;
-    color: whitesmoke;
-    font-size: 15px;
-    margin: 20px;
+#menu {
+    float: right;
 }
-#menu{
-    float:right;
 
-}
-#menu a{
+#menu a {
     display: inline-block;
     padding: 24px;
     color: whitesmoke;
     text-decoration: none;
-    transition:background-color 0.5s,color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
 }
-#menu a:hover{
+
+#menu a:hover {
     background-color: whitesmoke;
-    color:black;
-    
+    color: black;
 }
 
-
-#login-dp{
+#login-dp {
     min-width: 250px;
     padding: 14px 14px 0;
-    overflow:hidden;
-    background-color:rgba(255,255,255,.8);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .8);
 }
-#login-dp .help-block{
-    font-size:12px    
+
+#login-dp .help-block {
+    font-size: 12px
 }
-#login-dp .bottom{
-    background-color:rgba(255,255,255,.8);
-    border-top:1px solid #ddd;
-    clear:both;
-    padding:14px;
+
+#login-dp .bottom {
+    background-color: rgba(255, 255, 255, .8);
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px;
 }
-#login-dp .social-buttons{
-    margin:12px;    
+
+#login-dp .social-buttons {
+    margin: 12px;
 }
-#login-dp .social-buttons a{
+
+#login-dp .social-buttons a {
     width: 49%;
 }
+
 #login-dp .form-group {
     margin-bottom: 10px;
 }
-.btn-fb{
+
+.btn-fb {
     color: #fff;
-    background-color:#3b5998;
+    background-color: #3b5998;
 }
-.btn-fb:hover{
+
+.btn-fb:hover {
     color: #fff;
-    background-color:#496ebc 
+    background-color: #496ebc
 }
-.btn-tw{
+
+.btn-tw {
     color: #fff;
-    background-color:#55acee;
+    background-color: #55acee;
 }
-.btn-tw:hover{
+
+.btn-tw:hover {
     color: #fff;
-    background-color:#59b5fa;
+    background-color: #59b5fa;
 }
-@media(max-width:768px){
-    #login-dp{
+
+@media(max-width:768px) {
+    #login-dp {
         background-color: inherit;
         color: #fff;
     }
-    #login-dp .bottom{
+    #login-dp .bottom {
         background-color: inherit;
-        border-top:0 none;
+        border-top: 0 none;
     }
 }
 
-.formularioCadastro{
+.formularioCadastro {
     width: 800px;
     margin: 10px auto;
 }
 
-.formularioCadastro label{
+.formularioCadastro label {
     width: 20%;
     float: left;
     font-family: sans-serif;
@@ -152,64 +132,54 @@ header{
     text-shadow: 1px 1px 1px black;
 }
 
-.formularioCadastro input{
+.formularioCadastro input {
     width: 80%;
     float: left;
-}
-.formularioCadastro Select{
-    width: 80%;
-    float: left;
-}
-#cpf{
-      width: 80%;
-}
-#genero{
-      width: 80%;    
-   
-   
-     float:left;
 }
 
-}
-#Estado{
-       width: 80%;
+.formularioCadastro Select {
+    width: 80%;
     float: left;
 }
-#cidade{
-     width: 80%;
+
+#cpf {
+    width: 80%;
+}
+
+#genero {
+    width: 80%;
+    float: left;
+}
+
+#Estado {
+    width: 80%;
+    float: left;
+}
+
+#cidade {
+    width: 80%;
     float: none;
 }
-#semana{
-     width: 0%;
+
+#semana {
+    width: 0%;
     float: left;
-    
 }
 
-.horarios label{
+.horarios label {
     float: left;
     margin: 0px;
     padding: 0px;
 }
 
-.horarios input{
+.horarios input {
     background-color: white;
     float: left;
     margin-right: 10px;
     width: auto;
 }
 
-.btn{
+.btn {
     width: 100px !important;
     margin-bottom: 20px;
-}
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-    opacity: 0.8;
-   color: white;
-   text-align: center;
 }
