@@ -35,11 +35,6 @@ select {
 
 /* cabeçalho */
 
-header {
-    background-color: rgba(0, 0, 0, 0.2);
-    overflow: auto;
-}
-
 #menu {
     float: right;
 }
@@ -183,4 +178,8 @@ header {
 .btn {
     width: 100px !important;
     margin-bottom: 20px;
+}
+
+.botoescadastro input {
+    margin: 5px;
 }
