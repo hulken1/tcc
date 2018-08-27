@@ -20,17 +20,12 @@
             <img src="imagens/logo/coliseu2.png" class="imgsite">
         </a>
         <nav id="menu">
-
-
             <a href="contato.html">Contato</a>
 
         </nav>
-
-
         <br/>
         <div id="cadastro">
-            <form action="Script_do_Formulario.php" method="post" class="formularioCadastro">
-
+            <form method="post" class="formularioCadastro">
                 <!-- DADOS PESSOAIS-->
                 <fieldset>
                     <legend>Dados Pessoais</legend>
@@ -136,16 +131,7 @@
                     <label>
             <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Noite
             </label>
-
                 </fieldset>
-
-
-
-
-
-                <br />
-
-
                 <!-- DADOS DE LOGIN -->
                 <fieldset>
                     <legend>Dados de login</legend>
@@ -175,20 +161,25 @@
 
                     </table>
                 </fieldset>
-                <br/>
-                <input type="submit" class="btn btn-danger btn">
-                <input type="reset" value="Limpar" class="btn btn-danger btn">
+                <div id="botoescadastro">
+                    <input type="submit" class="btn btn-danger btn">
+                    <input type="reset" value="Limpar" class="btn btn-danger btn">
+                </div>
+
 
             </form>
-            <footer class="page-footer font-small blue fixed-bottom">
+            <div>
+                <footer class="page-footer font-small blue fixed-bottom">
 
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2018 Copyright: Sergio Adolfo Adenilson Marcos Java Noturno
-                </div>
-                <!-- Copyright -->
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3">© 2018 Copyright: Sergio Adolfo Adenilson Marcos Java Noturno
+                    </div>
+                    <!-- Copyright -->
 
-            </footer>
-            <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                </footer>
+                <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+
+            </div>
 
 
             <!-- jQuery -->
@@ -196,7 +187,7 @@
             <!-- jQuery -->
             <script src="js/padrao.js"></script>
             <!-- Bootstrap JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

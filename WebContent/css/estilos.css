@@ -119,8 +119,9 @@ header {
 }
 
 .formularioCadastro {
-    width: 800px;
+    max-width: 800px;
     margin: 10px auto;
+    position: static;
 }
 
 .formularioCadastro label {
