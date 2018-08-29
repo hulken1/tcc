@@ -1,0 +1,181 @@
+
+#cadastro {
+    height: 20px;
+}
+
+fieldset {
+    margin-top: 40px;
+}
+
+legend {
+    color: whitesmoke;
+}
+
+input {
+    color: darkgray;
+}
+
+select {
+    color:darkgrey;
+}
+.menu {
+    background-color: transparent;
+    border-radius: 10%;
+    margin: 10px;
+    float: right;
+    position: static;
+    opacity: 0.7;
+}
+#login-dp {
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+#login-dp .help-block {
+    font-size: 12px
+}
+
+#login-dp .bottom {
+    background-color: rgba(255, 255, 255, .8);
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px;
+}
+
+#login-dp .social-buttons {
+    margin: 12px;
+}
+
+#login-dp .social-buttons a {
+    width: 49%;
+}
+
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+.btn-fb {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.btn-fb:hover {
+    color: #fff;
+    background-color: #496ebc
+}
+
+.btn-tw {
+    color: #fff;
+    background-color: #55acee;
+}
+
+.btn-tw:hover {
+    color: #fff;
+    background-color: #59b5fa;
+}
+
+@media(max-width:768px) {
+    #login-dp {
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom {
+        background-color: inherit;
+        border-top: 0 none;
+    }
+}
+
+.formularioCadastro {
+    max-width: 800px;
+    margin: 50px auto;
+    position: static;
+}
+
+.formularioCadastro label {
+    width: 20%;
+    float: left;
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.formularioCadastro input {
+    width: 80%;
+    float: left;
+}
+
+.formularioCadastro Select {
+    width: 80%;
+    float: left;
+}
+
+#cpf {
+    width: 80%;
+}
+
+#genero {
+    width: 80%;
+    float: left;
+}
+
+#Estado {
+    width: 80%;
+    float: left;
+}
+
+#cidade {
+    width: 80%;
+    float: none;
+}
+
+#semana {
+    width: 0%;
+    float: left;
+}
+
+.horarios label {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.horarios input {
+    background-color: white;
+    float: left;
+    margin-right: 10px;
+    width: auto;
+}
+
+.botoescadastro input {
+    width: 100px !important;
+    margin-bottom: 20px;
+}
+.fontmenu {
+    color: ghostwhite;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.menu button:hover {
+    background-color: chocolate;
+    transition-duration: 0.6s;
+    transition-delay: 0.1s;
+    padding: 12px;
+    color: black;
+}
+
+.menu button {
+    background-color: transparent;
+    border: none;
+    margin: 3px;
+    width: 110px;
+    border-radius: 10%;
+}

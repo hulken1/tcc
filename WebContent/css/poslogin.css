@@ -3,7 +3,7 @@
 .barraleft {
     margin: 10px;
     float: right;
-    position: fixed;
+    position: static;
     right: 0;
     width: auto;
     color: aqua;
@@ -56,7 +56,7 @@
 .nav .open>a,
 .nav .open>a:hover,
 .nav .open>a:focus {
-    background-color: red;
+    background-color:transparent;
 }
 
 .dropdown {
@@ -98,3 +98,14 @@
     right: 14px;
     z-index: 9;
 }
+.barraleft a{
+    color: ghostwhite;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
