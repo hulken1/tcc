@@ -98,14 +98,14 @@
     right: 14px;
     z-index: 9;
 }
-.barraleft a{
-    color: ghostwhite;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 800;
-    cursor: pointer;
-    display: inline;
-    font-family: sans-serif;
-    font-style: italic;
+
+#modalbody{
+    background: rgba(104, 98, 98, 0.1);
 }
 
+#modaltitulo{
+    color: whitesmoke!important;
+}
+#modalbody2{
+    background: rgba(104, 98, 98, 0.5);
+}
