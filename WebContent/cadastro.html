@@ -12,20 +12,27 @@
   <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Bootstrap JavaScript -->
-        <script src="js/padrao.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        
+        <style>
+         #return-to-top{
+             z-index: 1;
+         }
+        </style>
 </head>
 
 <body>
-    <div id="background">
+    <div class="col-md-12"  id="background">
     </div>
     <nav class="navtop">
         <a href="index.html">
             <img src="imagens/logo/coliseu2.png" class="imgsite">
         </a>
-        <div id="menu">
-            <a href="contato.html">Contato</a>
+        <div class="menu">
+                <div class="btn">
+            <a href="poslogin.html">
+                <button type="button" class="btn btn-default fontmenu">Contato</button>
+            </a>
+                </div>
         </div>
     </nav>
       
@@ -110,11 +117,11 @@
     </label>
 
             <label>
-    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="Tarde">Tarde
+    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Tarde
     </label>
 
             <label>
-    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="Noite">Noite
+    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Noite
     </label>
 
         </fieldset>
@@ -126,15 +133,15 @@
 
 
             <label>
-    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia2">Dia
+    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Dia
     </label>
 
             <label>
-    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="Tarde2">Tarde
+    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Tarde
     </label>
 
             <label>
-    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="Noite2">Noite
+    <input type="checkbox" name="Disponibilidade De Horarios Durante a Semana" value="dia">Noite
     </label>
         </fieldset>
         <!-- DADOS DE LOGIN -->
@@ -172,7 +179,7 @@
             <input type="reset" value="Limpar" class="btn btn-danger btn">
         </div>
     </form>
-
+    <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap JavaScript -->
@@ -184,5 +191,5 @@
     <div class="footer-copyright text-center py-3">© 2018 Copyright: Sergio Adolfo Adenilson Marcos Java Noturno
         <!-- Copyright -->
 </footer>
-<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+
 
