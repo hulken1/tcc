@@ -34,14 +34,6 @@
     border-radius: 10%;
 }
 
-.barraleft {
-    margin-left: 10px;
-    margin-top: 70px;
-    height: 400px;
-    width: 250px;
-    background-color: transparent;
-}
-
 #login-modal .modal-dialog {
     width: 350px;
 }
