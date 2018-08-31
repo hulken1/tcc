@@ -73,8 +73,8 @@
 
 .divslider {
     padding-top: 15px;
-    padding-bottom: 15px;
-    background: url(../imgs/bgslider.png);
+    padding-bottom: 0px;
+    background-color: transparent;
 }
 
 .carousel-inner {
@@ -84,7 +84,7 @@
 section {
     padding-top: 25px;
     padding-bottom: 15px;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 .texto {
@@ -103,8 +103,13 @@ section {
 }
 
 #servicos {
+    padding: 0px;
     text-align: center;
     color: white;
+}
+
+#funcoes {
+    border: none;
 }
 
 .menu button:hover {
@@ -257,4 +262,16 @@ input[type=password] {
     font-size: 23px;
     font-weight: 700;
     background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%);
+}
+
+section#contato {
+    min-height: 50vh;
+}
+
+.contato textarea {
+    height: 170px;
+}
+
+.contato .aviso {
+    padding: 15px;
 }
