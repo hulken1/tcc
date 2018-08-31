@@ -7,15 +7,68 @@
     opacity: 0.7;
 }
 
-.fontmenu {
-    color: ghostwhite;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 800;
+.botaologin {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
     cursor: pointer;
-    display: inline;
-    font-family: sans-serif;
-    font-style: italic;
+    padding: 6px 20px 6px 53px;
+    border: none;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font: normal 18px/normal "Quantico", Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: url("http://enjoycss.com/bg-img/custom/93390-1g1zr84.6pqe.png"), rgba(140, 237, 116, 1);
+    background-repeat: no-repeat;
+    background-position: 14px 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: 24px auto;
+    background-size: 24px auto;
+    -webkit-box-shadow: 1px 1px 0 0 #599f3f;
+    box-shadow: 1px 1px 0 0 #599f3f;
+    text-shadow: 1px 1px 0 rgba(168, 168, 168, 0.66);
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.botaocontato {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 6px 20px 6px 53px;
+    border: none;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font: normal 18px/normal "Quantico", Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: url("http://enjoycss.com/bg-img/custom/93390-1pp53vx.786p.png"), rgba(140, 237, 116, 1);
+    background-repeat: no-repeat;
+    background-position: 14px 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: 24px auto;
+    background-size: 24px auto;
+    -webkit-box-shadow: 1px 1px 0 0 #599f3f;
+    box-shadow: 1px 1px 0 0 #599f3f;
+    text-shadow: 1px 1px 0 rgba(168, 168, 168, 0.66);
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .divslider {
@@ -34,9 +87,19 @@ section {
     min-height: 100vh;
 }
 
-#jogosmoment {
-    text-align: center;
+.texto {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: normal 60px/1 "Aladin", Helvetica, sans-serif;
     color: white;
+    text-align: center;
+    text-transform: normal;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 1px 1px 0 rgba(140, 140, 140, 0.6), -1px -1px 1px rgba(0, 0, 0, 0.67);
 }
 
 #servicos {
