@@ -10,23 +10,24 @@
     <link href="css/poslogin.css" rel="stylesheet">
     <link href="css/padrao.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
 </head>
 <script>
-    $(document).ready(function(){
-        $("#conta").click(function(){
+    $(document).ready(function() {
+        $("#conta").click(function() {
             $("#modal-mensagem").modal();
         });
     });
 
-      $(document).ready(function(){
-        $("#list").click(function(){
+    $(document).ready(function() {
+        $("#list").click(function() {
             $("#modal-list").modal();
         });
     });
-    </script>
+</script>
+
 <body>
     <div id="background">
     </div>
@@ -44,9 +45,9 @@
                     <li><a id="configuracoes">Configurações de conta <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
                     <li class="divider"></li>
                     <li><a id="conta">Dados do Usuario <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
-                    
+
                     <li class="divider"></li>
-                    
+
                     <li><a href="#">Mensagens <span class="glyphicon glyphicon-envelope pull-right"> 0 </span></a></li>
                     <li class="divider"></li>
                     <li><a id="list">Lista de Amigos <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
@@ -56,240 +57,289 @@
             </li>
         </ul>
     </div>
-   
-<!-- modal dados usuario -->
+
+    <!-- modal dados usuario -->
     </section>
     <div class="modal fade" id="modal-mensagem">
-            <div class="modal-dialog">
-                 <div id="modalbody" class="modal-content">
-                     <div class="modal-header">
-                         <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-                         <h4 id="modaltitulo" class="modal-title">Dados Do Usuario</h4>
-                     </div>
-                     <div id="modalbody" class="modal-body">
-                        <div id="modalbody" class="panel panel-info">
-                            <div id="modalbody2" class="panel-heading">
-                              <h3 id="modaltitulo" class="panel-title">Nome Usuario</h3>
-                            </div>
-                            
-                            <div class="panel-body">
-                              <div id="modalbody" class="row">
-                                
+        <div class="modal-dialog">
+            <div id="modalbody" class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 id="modaltitulo" class="modal-title">Dados Do Usuario</h4>
+                </div>
+                <div id="modalbody" class="modal-body">
+                    <div id="modalbody" class="panel panel-info">
+                        <div id="modalbody2" class="panel-heading">
+                            <h3 id="modaltitulo" class="panel-title">Nome Usuario</h3>
+                        </div>
+
+                        <div class="panel-body">
+                            <div id="modalbody" class="row">
+
                                 <div id="modaltitulo" class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
-                                  <dl>
-                                    <dt>DEPARTMENT:</dt>
-                                    <dd>Administrator</dd>
-                                    <dt>HIRE DATE</dt>
-                                    <dd>11/12/2013</dd>
-                                    <dt>DATE OF BIRTH</dt>
-                                       <dd>11/12/2013</dd>
-                                    <dt>GENDER</dt>
-                                    <dd>Male</dd>
-                                  </dl>
+                                    <dl>
+                                        <dt>DEPARTMENT:</dt>
+                                        <dd>Administrator</dd>
+                                        <dt>HIRE DATE</dt>
+                                        <dd>11/12/2013</dd>
+                                        <dt>DATE OF BIRTH</dt>
+                                        <dd>11/12/2013</dd>
+                                        <dt>GENDER</dt>
+                                        <dd>Male</dd>
+                                    </dl>
                                 </div>
-                                <div id="modaltitulo" class=" col-md-9 col-lg-9 "> 
-                                  <table id="modalbody" class="table table-user-information">
-                                    <tbody>
-                                       <tr>
-                                         <td>ID-TAG</td>
-                                         <td>#123</td>
-                                     </tr>       
-                                      <tr>
-                                        <td>Jogo Favorito:</td>
-                                        <td>Programming</td>
-                                      </tr>
-                                      
-                                      <tr>
-                                        <td>Data de Nascimento</td>
-                                        <td>01/24/1988</td>
-                                      </tr>
-                                   
-                                         <tr>
-                                             <tr>
-                                        <td>Genero</td>
-                                        <td>Female</td>
-                                      </tr>
-                                        <tr>
-                                        <td>Endereço</td>
-                                        <td>Kathmandu,Nepal</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Email</td>
-                                        
-                                      </tr>
-                                        <td>Telefone</td>
-                                        <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
-                                        </td>
-                                           
-                                      </tr>
-                                     
-                                    </tbody>
-                                  </table>                                                               
+                                <div id="modaltitulo" class=" col-md-9 col-lg-9 ">
+                                    <table id="modalbody" class="table table-user-information">
+                                        <tbody>
+                                            <tr>
+                                                <td>ID-TAG</td>
+                                                <td>#123</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jogo Favorito:</td>
+                                                <td>Programming</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Data de Nascimento</td>
+                                                <td>01/24/1988</td>
+                                            </tr>
+
+                                            <tr>
+                                                <tr>
+                                                    <td>Genero</td>
+                                                    <td>Female</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Endereço</td>
+                                                    <td>Kathmandu,Nepal</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email</td>
+
+                                                </tr>
+                                                <td>Telefone</td>
+                                                <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
+                                                </td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
                                 </div>
-                              </div>
                             </div>
-                                 <div id="modalbody" class="panel-footer">
-                                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
-                                        <span class="pull-right">
+                        </div>
+                        <div id="modalbody" class="panel-footer">
+                            <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                            <span class="pull-right">
                                             <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
                                             <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
                                         </span>
-                                    </div>
-                            
-                          </div>
                         </div>
-                      </div>
+
                     </div>
-                     </div>
-                     <div class="modal-footer">
-                     
-                     </div>
-                 </div>
-             </div>
-         </div>
-  <!-- modal dados usuario FIM-->
-<!-- modal lista de amigos -->
-
-<div class="modal fade" id="modal-list">
-            <div class="modal-dialog">
-                 <div class="modal-content">
-                    <div class="modal-header">
-                         <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-                       <h4 class="modal-title">Lista De Amigos</h4>
-                     </div>
-                     <div class="modal-body">
-                            <div class="btn-toolbar">
-                                    <button class="btn btn-primary">Adauga utilizator</button>
-                                </div>
-                                <div class="well">
-                                    <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th>#</th>
-                                          <th>Nome</th>
-                                          <th>Nick</th>
-                                          <th>Rol</th>
-                                          <th style="width: 36px;"></th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <td>1</td>
-                                          <td>Mark</td>
-                                          <td>Tompson</td>
-                                          <td>the_mark7</td>
-                                          <td>Angajat</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>2</td>
-                                          <td>Ashley</td>
-                                          <td>Jacobs</td>
-                                          <td>ash11927</td>
-                                          <td>Angajat</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>3</td>
-                                          <td>Audrey</td>
-                                          <td>Ann</td>
-                                          <td>audann84</td>
-                                          <td>Angajat</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>4</td>
-                                          <td>John</td>
-                                          <td>Robinson</td>
-                                          <td>jr5527</td>
-                                          <td>Angajat</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>5</td>
-                                          <td>Aaron</td>
-                                          <td>Butler</td>
-                                          <td>aaron_butler</td>
-                                          <td>Angajat</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>6</td>
-                                          <td>Chris</td>
-                                          <td>Albert</td>
-                                          <td>cab79</td>
-                                          <td>Sef departament</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                </div>
-                                <div class="pagination">
-                                    <ul>
-                                        <li><a href="#">Prev</a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">Next</a></li>
-                                    </ul>
-                                </div>
-                                <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                        <h3 id="myModalLabel">Delete Confirmation</h3>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p class="error-text">Are you sure you want to delete the user?</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                                        <button class="btn btn-danger" data-dismiss="modal">Delete</button>
-                                    </div>
-                                </div>
-                     </div>
-                     <div class="modal-footer">
-                         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                     </div>
-                 </div>
+                </div>
             </div>
-</div>
+        </div>
+    </div>
+    <div class="modal-footer">
 
-<!-- modal lista de amigos FIM -->
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- modal dados usuario FIM-->
+    <!-- modal lista de amigos -->
 
+    <div class="modal fade" id="modal-list">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                    <h4 class="modal-title">Lista De Amigos</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="btn-toolbar">
+                        <button class="btn btn-primary">Adauga utilizator</button>
+                    </div>
+                    <div class="well">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nome</th>
+                                    <th>Nick</th>
+                                    <th>Rol</th>
+                                    <th style="width: 36px;"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Tompson</td>
+                                    <td>the_mark7</td>
+                                    <td>Angajat</td>
+                                    <td>
+                                        <a href="user.html"><i class="icon-pencil"></i></a>
+                                        <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ashley</td>
+                                    <td>Jacobs</td>
+                                    <td>ash11927</td>
+                                    <td>Angajat</td>
+                                    <td>
+                                        <a href="user.html"><i class="icon-pencil"></i></a>
+                                        <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Audrey</td>
+                                    <td>Ann</td>
+                                    <td>audann84</td>
+                                    <td>Angajat</td>
+                                    <td>
+                                        <a href="user.html"><i class="icon-pencil"></i></a>
+                                        <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>John</td>
+                                    <td>Robinson</td>
+                                    <td>jr5527</td>
+                                    <td>Angajat</td>
+                                    <td>
+                                        <a href="user.html"><i class="icon-pencil"></i></a>
+                                        <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Aaron</td>
+                                    <td>Butler</td>
+                                    <td>aaron_butler</td>
+                                    <td>Angajat</td>
+                                    <td>
+                                        <a href="user.html"><i class="icon-pencil"></i></a>
+                                        <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Chris</td>
+                                    <td>Albert</td>
+                                    <td>cab79</td>
+                                    <td>Sef departament</td>
+                                    <td>
+                                        <a href="user.html"><i class="icon-pencil"></i></a>
+                                        <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li><a href="#">Prev</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Next</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 id="myModalLabel">Delete Confirmation</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p class="error-text">Are you sure you want to delete the user?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                            <button class="btn btn-danger" data-dismiss="modal">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal lista de amigos FIM -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Copyright -->
+    <div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <small>© 2018 Copyright:</small>
+                        <strong>Sergio 
+                                Adolfo
+                                Ademilson
+                                Marcos
+                        </strong>
+                    </div>
 
+                </div>
+            </div>
+        </footer>
+        <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    </div>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/padrao.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-<div>
-</footer>
-<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-<!-- END # MODAL LOGIN -->
-<footer class="row col-md-12 page-footer font-small blue navbar-fixed-bottom">
-
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3 navbar-bottom">© 2018 Copyright: Sergio Adolfo Adenilson Marcos Java Noturno
-</div>
-</div>

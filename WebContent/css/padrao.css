@@ -20,9 +20,9 @@ html {
 }
 
 footer {
-    padding: 20px;
-    bottom: 0;
-    left: 0;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0.8;
@@ -50,6 +50,7 @@ footer {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top i {
     color: #fff;
     margin: 0;
@@ -72,7 +73,7 @@ footer {
     color: #fff;
     top: 5px;
 }
-.imgsite{
+
+.imgsite {
     max-width: 150px;
-    
 }
