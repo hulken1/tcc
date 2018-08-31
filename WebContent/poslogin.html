@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ARENA 21</title>
+    <title>teste</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/poslogin.css" rel="stylesheet">
     <link href="css/padrao.css" rel="stylesheet">
@@ -24,6 +24,12 @@
             $("#modal-list").modal();
         });
     });
+
+         $(document).ready(function(){
+        $("#config").click(function(){
+            $("#modal-config").modal();
+        });
+    });
     </script>
 <body>
     <div id="background">
@@ -39,7 +45,7 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome Usuario <span class="glyphicon glyphicon-user pull-right"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a id="configuracoes">Configurações de conta <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                    <li><a id="config">Configurações de conta <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
                     <li class="divider"></li>
                     <li><a id="conta">Dados do Usuario <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
                     
@@ -265,6 +271,61 @@
 </div>
 
 <!-- modal lista de amigos FIM -->
+
+
+<!-- modal trocar senha -->
+
+ <div class="modal fade" id="modal-config">
+      <div class="modal-dialog">
+           
+              
+<div class="container">
+  <div id="passwordreset" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+      <div class="panel panel-info">
+          <div class="panel-heading">
+              <div class="panel-title">Create New Password</div>
+          </div>                     
+          <div id="modalbody" class="panel-body" >
+              <form id="signupform" class="form-horizontal" role="form">
+                  <div class="form-group">
+                      <label for="email" class=" control-label col-sm-3">Registered email</label>
+                      <div class="col-sm-9">
+                          <input type="text" class="form-control" name="email" placeholder="Please input your email used to register with us">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class=" control-label col-sm-3">New password</label>
+                      <div class="col-sm-9">
+                          <input type="password" class="form-control" name="password" placeholder="create your new password">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class=" control-label col-sm-3">Confirm password</label>
+                      <div class="col-sm-9">
+                          <input type="password" class="form-control" name="password_confirmation" placeholder="confirm your new password">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <!-- Button -->                                 
+                      <div class="  col-sm-offset-3 col-sm-9">
+                          <button id="btn-signup" type="button" class="btn btn-success">Submit</button>
+                      </div>
+                  </div>                             
+              </form>
+          </div>
+      </div>
+  </div>             
+</div>
+               </div>
+                </div>
+         
+
+<!-- modal trocar senha -->
+
+
+
+    <!-- Copyright -->
+<!-- modal lista de amigos FIM -->
 <br>
 <br>
 <br>
@@ -328,7 +389,6 @@
       </footer>
       <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
   </div>
-  
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/padrao.js"></script>
