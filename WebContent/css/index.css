@@ -92,8 +92,8 @@ section {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     border: none;
-    font: normal 60px/1 "Aladin", Helvetica, sans-serif;
-    color: white;
+    font: normal 40px/1 "Aladin", Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 1);
     text-align: center;
     text-transform: normal;
     -o-text-overflow: clip;
