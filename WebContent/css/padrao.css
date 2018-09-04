@@ -10,7 +10,7 @@
     width: 100%;
     height: 100%;
     background-image: url(../imagens/fundo/original.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     z-index: -1;
 }

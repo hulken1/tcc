@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,75 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pesquisa.css">
     <link href="css/padrao.css" rel="stylesheet">
 </head>
+
 <body>
-        <div class="col-md-12" id="background">
+    <div id="background"></div>
+    <div class="container-fluid">
+
+        <!-- Topo -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="row navtop col-md-12">
+                    <a href="index.html">
+                        <img src="imagens/logo/coliseu2.png" class="imgsite">
+                    </a>
+                </nav>
             </div>
-            <nav class="row navtop">
-                <a href="index.html">
-                    <img src="imagens/logo/coliseu2.png" class="imgsite">
-                </a>
+        </div>
 
-
+        <!-- Conteúdo -->
+        <div class="row">
+                <div class="col-md-2">
+<div class="form-group ">
+   <label for="tipoos" class="control-label">Cidades</label>
+      <select  class="form-control"  id="cidades" data-placeholder="Selecione a cidade">
+         <option value="0"></option>
+         <option value="1">Manaus</option>
+         <option value="1">Boa Vista</option>
+         <option value="2">São Paulo</option>
+       </select>
+</div>              </div>
+       
+              <div class="col-md-10">
+             
+                <h2>Responsive Sidebar Example</h2>
+                <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
+                <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+                <h3>Resize the browser window to see the effect.</h3>
+              </div>
+            </div>
+                </div>
+                <footer>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <small>© 2018 Copyright:</small>
+                                    <strong>Ademilson 
+                                            Adolfo
+                                            Marcos
+                                            Sergio
+                                    </strong>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </footer>
+                    <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.3/chosen.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.3/chosen.jquery.min.js"></script>
+  
+            <script>
+            $('#cidades').chosen( {
+              allow_single_deselect: true,
+              search_contains: true,
+              no_results_text: "Nenhum resultado enontrado!"
+          } );</script>    
 </body>
+
 </html>

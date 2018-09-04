@@ -1,0 +1,98 @@
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+#painelFiltros{   
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 22px/1 "Aladin", Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-transform: normal;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+
+  text-shadow: 1px 1px 0 rgba(140, 140, 140, 0.6), -1px -1px 1px rgba(0, 0, 0, 0.67);
+}
+#backgroundSidebar{
+    background-color: mintcream;
+}
+#headingOne{
+    background-color: lightgray;
+}
+.chosen-container-single .chosen-single {
+  background-color: #ffffff !important;
+  -webkit-background-clip: padding-box !important;
+  -moz-background-clip: padding !important;
+  background-clip: padding-box !important;
+  border: 1px solid #cccccc !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075) !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075) !important;
+  color: #555555 !important;
+  display: block !important;
+  height: 34px !important;
+  overflow: hidden !important;
+  line-height: 34px !important;
+  padding: 0 0 0 8px !important;
+  position: relative !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  background-image: none !important;
+}
+
+.chosen-container-single .chosen-single div b {
+   background-position: 1px 5px !important;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+   background-position: -15px 5px !important;
+}
