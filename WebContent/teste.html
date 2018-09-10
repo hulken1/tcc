@@ -19,273 +19,49 @@
         <a href="index.html">
             <img src="imagens/logo/coliseu2.png" class="imgsite">
         </a>
-        <form class="form-horizontal">
-            <fieldset>
-                <div class="panel panel-primary">
-                    <div class="panel-body">
-                        <div class="form-group">
-                            <!--
-    <div class="form-group">   
-    <div class="col-md-4 control-label">
-        <img id="logo" src="http://blogdoporao.com.br/wp-content/uploads/2016/12/Faculdade-pitagoras.png"/>
-    </div>
-    <div class="col-md-4 control-label">
-        <h1>Cadastro de Cliente</h1>
-        
-    </div>
-    </div>
-        -->
-                            <div class="col-md-11 control-label">
-                                <p class="help-block">
-                                    <h11>*</h11> Campo Obrigatório </p>
-                            </div>
-                        </div>
-
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>
-                            <div class="col-md-8">
-                                <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
-                            </div>
-                        </div>
-
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>
-                            <div class="col-md-2">
-                                <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
-                            </div>
-
-                            <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>
-                            <div class="col-md-2">
-                                <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
-                            </div>
-
-                            <!-- Multiple Radios (inline) -->
-
-                            <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
-                            <div class="col-md-4">
-                                <label required="" class="radio-inline" for="radios-0">
-          <input name="sexo" id="sexo" value="feminino" type="radio" required>
-          Feminino
-        </label>
-                                <label class="radio-inline" for="radios-1">
-          <input name="sexo" id="sexo" value="masculino" type="radio">
-          Masculino
-        </label>
-                            </div>
-                        </div>
-
-                        <!-- Prepended text-->
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)">
-                                </div>
-                            </div>
-
-                            <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Prepended text-->
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
-                            <div class="col-md-5">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                                </div>
-                            </div>
-                        </div>
 
 
-                        <!-- Search input-->
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
-                            <div class="col-md-2">
-                                <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
-                            </div>
-                            <div class="col-md-2">
-                                <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
-                            </div>
-                        </div>
+        <div class="icheckbox_line-blue"><input id="week_morning" name="week_morning" value="week_morning" style="position: absolute; opacity: 0;" type="checkbox">
+            <div class="icheck_line-icon"></div>Manhã<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div>
 
-                        <!-- Prepended text-->
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <span class="input-group-addon">Rua</span>
-                                    <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-                                </div>
+        <p align="center"><b>Dia de Semana</b></p>
+        <hr style="margin-top:0; margin-bottom:0; height:3px; visibility:hidden;">
 
-                            </div>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <span class="input-group-addon">Nº <h11>*</h11></span>
-                                    <input id="numero" name="numero" class="form-control" placeholder="" required="" type="text">
-                                </div>
+        <div class="icheckbox_line-blue"><input id="week_afternoon" name="week_afternoon" value="week_afternoon" style="position: absolute; opacity: 0;" type="checkbox">
+            <div class="icheck_line-icon"></div>Tarde<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div>
 
-                            </div>
+        <hr style="margin-top:0; margin-bottom:0; height:3px; visibility:hidden;">
 
-                            <div class="col-md-3">
-                                <div class="input-group">
-                                    <span class="input-group-addon">Bairro</span>
-                                    <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-                                </div>
+        <div class="icheckbox_line-blue"><input id="week_night" name="week_night" value="week_night" style="position: absolute; opacity: 0;" type="checkbox">
+            <div class="icheck_line-icon"></div>Noite<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div>
 
-                            </div>
-                        </div>
+        <hr style="margin-top:0; margin-bottom:0; height:3px; visibility:hidden;">
 
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="prependedtext"></label>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <span class="input-group-addon">Cidade</span>
-                                    <input id="cidade" name="cidade" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-                                </div>
+        <div class="icheckbox_line-blue"><input id="week_dawn" name="week_dawn" value="week_dawn" style="position: absolute; opacity: 0;" type="checkbox">
+            <div class="icheck_line-icon"></div>Madrugada<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div>
 
-                            </div>
+        <hr style="margin-top:0; margin-bottom:0; height:3px; visibility:hidden;">
 
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <span class="input-group-addon">Estado</span>
-                                    <input id="estado" name="estado" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-                                </div>
+        <p align="center"><b>Final de Semana</b></p>
+        <div class="icheckbox_line-green"><input id="weekend_morning" name="weekend_morning" value="weekend_morning" style="position: absolute; opacity: 0;" type="checkbox">
+            <div class="icheck_line-icon"></div>Manhã<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div>
 
-                            </div>
-                        </div>
+        <hr style="margin-top:0; margin-bottom:0; height:3px; visibility:hidden;">
 
-                        <!-- Select Basic -->
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="Estado Civil">Estado Civil <h11>*</h11></label>
-                            <div class="col-md-2">
-                                <select required id="Estado Civil" name="Estado Civil" class="form-control">
-            <option value=""></option>
-          <option value="Solteiro(a)">Solteiro(a)</option>
-          <option value="Casado(a)">Casado(a)</option>
-          <option value="Divorciado(a)">Divorciado(a)</option>
-          <option value="Viuvo(a)">Viuvo(a)</option>
-        </select>
-                            </div>
+        <div class="icheckbox_line-green"><input id="weekend_afternoon" name="weekend_afternoon" value="weekend_afternoon" style="position: absolute; opacity: 0;" type="checkbox">
+            <div class="icheck_line-icon"></div>Tarde<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div>
 
-                            <!-- Prepended checkbox -->
+        <hr style="margin-top:0; margin-bottom:0; height:3px; visibility:hidden;">
 
-                        </div>
+        <div class="icheckbox_line-green"><input id="weekend_night" name="weekend_night" value="weekend_night" style="position: absolute; opacity: 0;" type="checkbox">
+            <div class="icheck_line-icon"></div>Noite<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div>
+
+        <hr style="margin-top:0; margin-bottom:0; height:3px; visibility:hidden;">
+
+        <div class="icheckbox_line-green"><input id="weekend_dawn" name="weekend_dawn" value="weekend_dawn" style="position: absolute; opacity: 0;" type="checkbox">
+            <div class="icheck_line-icon"></div>Madrugada<ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div>
 
 
-                        <!-- Select Basic -->
-                        <div class="form-group">
-
-                            <label class="col-md-2 control-label" for="selectbasic">Escolaridade <h11>*</h11></label>
-
-                            <div class="col-md-3">
-                                <select required id="escolaridade" name="escolaridade" class="form-control">
-        <option value=""></option>
-          <option value="Analfabeto">Analfabeto</option>
-          <option value="Fundamental Incompleto">Fundamental Incompleto</option>
-          <option value="Fundamental Completo">Fundamental Completo</option>
-          <option value="Médio Incompleto">Médio Incompleto</option>
-          <option value="Médio Completo">Médio Completo</option>
-          <option value="Superior Incompleto">Superior Incompleto</option>
-          <option value="Superior Completo">Superior Completo</option>
-        </select>
-                            </div>
-
-
-                            <!-- Text input-->
-
-                            <label class="col-md-1 control-label" for="profissao">Profissão<h11>*</h11></label>
-                            <div class="col-md-4">
-                                <input id="profissao" name="profissao" type="text" placeholder="" class="form-control input-md" required="">
-
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="encaminhamento">Encaminhamento <h11>*</h11></label>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <span class="input-group-addon">     
-            <label class="radio-inline" for="radios-0">
-          <input type="radio" name="enc" id="enc" value="Nao" onclick="desabilita('enc_instituicao')" required>
-          Não
-        </label> 
-        <label class="radio-inline" for="radios-1">
-          <input type="radio" name="enc" id="enc" value="sim" onclick="habilita('enc_instituicao')">
-          Sim
-        </label>
-          </span>
-                                    <input id="enc_instituicao" name="enc" class="form-control" type="text" placeholder="Instituição">
-
-                                </div>
-
-                            </div>
-
-
-                            <label class="col-md-1 control-label" for="encaminhamento">Aluno FAP-Betim<h11>*</h11></label>
-                            <div class="col-md-4">
-                                <div class="input-group">
-                                    <span class="input-group-addon">     
-            <label class="radio-inline" for="radios-0">
-          <input type="radio" name="aluno" id="enc" value="Nao" required>
-          Não
-        </label> 
-        <label class="radio-inline" for="radios-1">
-          <input type="radio" name="aluno" id="enc" value="sim">
-          Sim
-        </label>
-          </span>
-                                    <input id="enc" name="curso" class="form-control" type="text" placeholder="Curso">
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="textinput">Como ficou sabendo da Clínica?</label>
-                            <div class="col-md-4">
-                                <input id="textinput" name="textinput" placeholder="" class="form-control input-md" type="text">
-
-                            </div>
-
-                        </div>
-
-
-
-
-                        <!-- Button (Double) -->
-                        <div class="form-group">
-                            <label class="col-md-2 control-label" for="Cadastrar"></label>
-                            <div class="col-md-8">
-                                <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
-                                <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </fieldset>
-        </form>
-
-        <footer class="page-footer font-small blue fixed-bottom" !important>
-            <div class="footer-copyright text-center ">© 2018 Copyright: Sergio Adolfo Adenilson Marcos Java Noturno
-            </div>
-        </footer>
         <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
         <!-- jQuery -->
