@@ -1,9 +1,3 @@
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
-
 *,
 *::after,
 *::before {
@@ -35,9 +29,7 @@ a {
 
 
 /* -------------------------------- 
-
 Main Components 
-
 -------------------------------- */
 
 .cd-header {
@@ -86,7 +78,7 @@ Main Components
 }
 
 .cd-main-content.is-fixed .cd-filter {
-    position: fixed;
+    position: absolute;
     height: 100vh;
     overflow: hidden;
 }
@@ -115,9 +107,7 @@ Main Components
 
 
 /* -------------------------------- 
-
 xtab-filter 
-
 -------------------------------- */
 
 .cd-tab-filter-wrapper {
@@ -279,9 +269,7 @@ xtab-filter
 
 
 /* -------------------------------- 
-
 xgallery 
-
 -------------------------------- */
 
 .cd-gallery {
@@ -349,9 +337,7 @@ xgallery
 
 
 /* -------------------------------- 
-
 xfilter 
-
 -------------------------------- */
 
 .cd-filter {
@@ -360,7 +346,7 @@ xfilter
     left: 0;
     width: 280px;
     height: 100%;
-    background: #ffffff;
+    background: white;
     box-shadow: 4px 4px 20px transparent;
     z-index: 2;
     /* Force Hardware Acceleration in WebKit */
@@ -487,9 +473,7 @@ xfilter
 
 
 /* -------------------------------- 
-
 xcustom form elements 
-
 -------------------------------- */
 
 .cd-filter-block {
@@ -518,6 +502,7 @@ xcustom form elements
 
 .cd-filter-block h4::before {
     /* arrow */
+    background-color: #2489c5;
     content: '';
     position: absolute;
     left: 0;
@@ -550,8 +535,8 @@ xcustom form elements
     /* shared style for input elements */
     font-family: "Open Sans", sans-serif;
     border-radius: 0;
-    background-color: #ffffff;
-    border: 2px solid #e6e6e6;
+   
+    
 }
 
 .cd-filter-block input[type='search'],
@@ -702,8 +687,7 @@ xcustom form elements
 
 .cd-filter-block input[type=radio]:checked+label::before,
 .cd-filter-block input[type=checkbox]:checked+label::before {
-    border-color: #41307c;
-    background-color: #41307c;
+    background-color: #2489c5;
 }
 
 .cd-filter-block input[type=radio]:checked+label::after,
@@ -716,15 +700,23 @@ xcustom form elements
     .cd-filter-block .cd-select::after {
         display: none;
     }
-}
-
+} 
 .checkboxDsemana li {
     display: block;
+    text-align: center;
     margin: 0;
-
+    padding: 5px;
     font-size: 13px;
     line-height: 17px;
     color: #fff;
-    background: #2489c5;
+    background-color: #2489c5;
     cursor: pointer;
+}
+
+ul p {
+    font-weight: 500;
+}
+#cidadeEstado select{
+    border: none;
+    margin: 2px;
 }

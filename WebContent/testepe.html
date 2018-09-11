@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/padrao.css">
     <!-- Resource style -->
-    <script src="js/modernizr.js"></script>
+
     <!-- Modernizr -->
 
     <title>Busca Games</title>
@@ -38,12 +38,13 @@
                 <div class="cd-tab-filter">
                     <ul class="cd-filters">
                         <li class="placeholder">
-                            <a data-type="all" href="#0">All</a>
+                            <a data-type="all" href="#">All</a>
                             <!-- selected option on mobile -->
                         </li>
-                        <li class="filter"><a class="selected" href="#0" data-type="all">Todas Salas</a></li>
-                        <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">?</a></li>
-                        <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">?</a></li>
+                        <li class="filter"><a class="selected" href="#" data-type="all">Todas Salas</a></li>
+                        <li class="filter" data-filter=".color-1"><a href="#" data-type="color-1">Aberta</a></li>
+                        <li class="filter" data-filter=".color-2"><a href="#" data-type="color-2">Privada</a></li>
+                      
                     </ul>
                     <!-- cd-filters -->
                 </div>
@@ -86,66 +87,33 @@
                     <!-- cd-filter-block -->
 
                     <div class="cd-filter-block">
-                        <h4>Disponibilidade</h4>
+                        <h4>Encontre uma sala</h4>
                         <ul class="cd-filter-content cd-filters list">
-                            <p align="center">Dias da semana</p>
-                            <div class="checkboxDsemana">
-                                <li>
-                                    <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                                    <label class="checkbox-label" for="checkbox1">Manha</label>
-                                </li>
-                                <li>
-                                    <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                                    <label class="checkbox-label" for="checkbox2">Tarde</label>
-                                </li>
-
-                                <li>
-                                    <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                                    <label class="checkbox-label" for="checkbox3">Noite</label>
-                                </li>
+                          
+                            <div class="cd-filter-content">
+                                <input type="search" placeholder="Nome da Sala">
                             </div>
-                        </ul>
-                        <ul class="cd-filter-content cd-filters list">
-                            <p align="center">Final de Semana</p>
-                            <li>
-                                <input class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
-                                <label class="checkbox-label" for="checkbox4">Manha</label>
-                            </li>
-
-                            <li>
-                                <input class="filter" data-filter=".check5" type="checkbox" id="checkbox5">
-                                <label class="checkbox-label" for="checkbox5">Tarde</label>
-                            </li>
-
-                            <li>
-                                <input class="filter" data-filter=".check6" type="checkbox" id="checkbox6">
-                                <label class="checkbox-label" for="checkbox6">Noite</label>
-                            </li>
-                        </ul>
+                        
                         <!-- cd-filter-content -->
                     </div>
                     <!-- cd-filter-block -->
 
                     <div class="cd-filter-block">
-                        <h4>Cidades / Estados</h4>
+                        <h4> Cidades </h4>
                         <div class="cd-filter-content">
-                            <div class="cd-select cd-filters">
-                                        <select  class="filter" id="estado1" value="Selecione Estado"></select>
-                                        <select class="filter"  id="cidade1" value="Selecione Cidade"></select>
+                            <div id="cidadeEstado" class=" cd-filters">
+                                        <select   id="estado1" value="Selecione Estado"></select>
+                                        <select   id="cidade1" value="Selecione Cidade"></select>
                             </div>
                             <!-- cd-select -->
                         </div>
                         <!-- cd-filter-content -->
                     </div>
-                    <!-- cd-filter-block -->
-
-                   
+                    <!-- cd-filter-block --> 
                 </form>
-
                 <a href="#0" class="cd-close">Close</a>
             </div>
             <!-- cd-filter -->
-
             <a href="#0" class="cd-filter-trigger">Filtro</a>
         </main>
         <div>
@@ -165,20 +133,22 @@
                     </div>
                     
                 </footer>
+        </div>
                 <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
         <!-- cd-main-content -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/jquery.mixitup.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/padrao.js"></script>
+        <script src="js/modernizr.js"></script>
         <script language="JavaScript" type="text/javascript" src="js/cidades-estados-utf8.js"></script>
+        <!-- Resource jQuery -->
         <script language="JavaScript" type="text/javascript" charset="utf-8">
             new dgCidadesEstados({
               cidade: document.getElementById('cidade1'),
               estado: document.getElementById('estado1')
             })
           </script>
-        <!-- Resource jQuery -->
 </body>
 
 </html>

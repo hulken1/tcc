@@ -154,120 +154,69 @@
   <!-- modal dados usuario FIM-->
 <!-- modal lista de amigos -->
 
+
 <div  class="modal fade" id="modal-list">
-            <div id="modaltitulo" class="modal-dialog">
-                 <div id="modalbody" class="modal-content">
-                    <div id="modaltitulo" class="modal-header">
-                      <h4 id="modaltitulo2" class="modal-title">Lista De Amigos</h4>
-                     </div>
-                     <div id="modalbody" class="modal-body">
-                                   <div id="modalbody2" class="well">
-                                    <table id="modalbody" class="table">
-                                      <thead  id="modalbody" > 
-                                        <tr>
-                                          <th>#</th>
-                                          <th>Nome</th>
-                                          <th>Nick</th>
-                                          <th style="width: 36px;"></th>
-                                        </tr>
-                                      </thead>
-                                      <tbody id="modalbody" >
-                                        <tr>
-                                          <td>1</td>
-                                          <td>Mark</td>
-                                          <td>the_mark7</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#modal-list" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>2</td>
-                                          <td>Ashley</td>
-                                          <td>ash11927</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>3</td>
-                                          <td>Audrey</td>
-                                          <td>audann84</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>4</td>
-                                          <td>John</td>
-                                          <td>jr5527</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>5</td>
-                                          <td>Aaron</td>
-                                          <td>aaron_butler</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>6</td>
-                                          <td>Chris</td>
-                                          <td>cab79</td>
-                                          <td>
-                                              <a href="user.html"><i class="icon-pencil"></i></a>
-                                              <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                </div>
-                                <nav aria-label="Page navigation">
-                                        <ul class="pagination">
-                                          <li>
-                                            <a href="#" aria-label="Previous">
-                                              <span aria-hidden="true">&laquo;</span>
-                                            </a>
-                                          </li>
-                                          <li><a href="#">1</a></li>
-                                          <li><a href="#">2</a></li>
-                                          <li><a href="#">3</a></li>
-                                          <li><a href="#">4</a></li>
-                                          <li><a href="#">5</a></li>
-                                          <li>
-                                            <a href="#" aria-label="Next">
-                                              <span aria-hidden="true">&raquo;</span>
-                                            </a>
-                                          </li>
-                                        </ul>
-                                      </nav>
-                                      
-                                <div id="modalbody" class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                        <h3 id="myModalLabel">Delete Confirmation</h3>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p class="error-text">Are you sure you want to delete the user?</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                                        <button class="btn btn-danger" data-dismiss="modal">Delete</button>
-                                    </div>
-                                </div>
-                     </div>
-                     <div id="modalbody" class="modal-footer">
-                         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                     </div>
-                 </div>
-            </div>
+    <div id="modaltitulo" class="modal-dialog">
+         <div  class="modal-content">
+             </div>
+             <div class="container">
+                      <div class="row2">
+                          <div class="col-md-3"></div>
+                      <div class="col-md-6">
+                        <div class="panel panel-primary">
+                          <div class="panel-heading2">
+                            <h3 class="panel-title">Lista de Amigos</h3>
+                           
+                          </div>
+                          <div class="panel-body">
+                            <input type="text" class="form-control" id="modalbody2" data-action="filter" data-filters="#dev-table" placeholder="Filtrar Amigos" />
+                          </div>
+                          <table class="table" id="dev-table">
+                            <thead>
+                              <tr>
+                                <th>#ID</th>
+                                <th>Nome</th>
+                                <th>Nick</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Kilgore</td>
+                                <td>kilgore</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Bob</td>
+                                <td>boblahblah</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Holden</td>
+                                <td>penceyreject</td>
+                              </tr>
+                              <tr>
+                                    <td>4</td>
+                                    <td>Holden</td>
+                                    <td>penceyreject</td>
+                                  </tr>
+                                  <tr>
+                                        <td>5</td>
+                                        <td>Holden</td>
+                                        <td>penceyreject</td>
+                                      </tr>
+                                      <tr>
+                                            <td>6</td>
+                                            <td>Holden</td>
+                                            <td>penceyreject</td>
+                                          </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+             </div>
+         </div>
+    </div>
 </div>
 
 <!-- modal lista de amigos FIM -->
@@ -318,11 +267,6 @@
 </div>
                </div>
                 </div>
-         
-
-<!-- modal trocar senha -->
-
-
 
     <!-- Copyright -->
 <!-- modal lista de amigos FIM -->
@@ -392,6 +336,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/padrao.js"></script>
+    <script src="js/friend.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
