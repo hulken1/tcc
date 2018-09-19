@@ -166,28 +166,6 @@ var buttonFilter = {
 	    });
   	},
   
-  	parseFilters: function(){
-	    var self = this;
-	 
-	    // loop through each filter group and grap the active filter from each one.
-	    for(var i = 0, group; group = self.groups[i]; i++){
-	    	group.active = [];
-	    	group.$inputs.each(function(){
-	    		var $this = $(this);
-	    		if($this.is('input[type="radio"]') || $this.is('input[type="checkbox"]')) {
-	    			if($this.is(':checked') ) {
-	    				group.active.push($this.attr('data-filter'));
-	    			}
-	    		} else if($this.is('select')){
-	    			group.active.push($this.val());
-	    		} else if( $this.find('.selected').length > 0 ) {
-	    			group.active.push($this.attr('data-filter'));
-	    		}
-	    	});
-	    }
-	    self.concatenate();
-  	},
-  
   	concatenate: function(){
     	var self = this;
     

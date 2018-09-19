@@ -22,17 +22,22 @@
 
             <div class="btn">
 
-                <div class="botaologin" data-target="#login-modal" data-toggle="modal">Logar</div>
+                    <div class="botaologin" data-target="#login-modal" data-toggle="modal"><span>Logar </span></div>
                 <link async href="http://fonts.googleapis.com/css?family=Quantico" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css" />
-                <a href="poslogin.html">
-                    <div class="botaocontato" class="botaocontato">Contato</div>
-                    <link async href="http://fonts.googleapis.com/css?family=Quantico" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css" />
-                </a>
-
+                	
             </div>
         </div>
 
     </nav>
+    
+  <div class="col-md-1" id="menuLateral">
+    <div id="sideLateral" class="sidenav">
+  <a href="#" id="sobre" ><img src="imagens/icones/about.png" title="Sobre"></a>
+  <a href="#" id="cadastro"  onclick="window.location.href='cadastro.html'" title="Cadastro"><img src="imagens/icones/cadastro.png"></a>
+  <a href="#" id="salas"  onclick="window.location.href='salas.jsp'" title="Salas"><img src="imagens/icones/salas.png" ></a>
+  <a href="#" id="forum"  onclick="window.location.href='forum.jsp'" title="Forum"><img src="imagens/icones/forum.png" ></a>
+</div>
+   </div>  
     <div class="texto">Jogos do Momento</div>
     <link async href="http://fonts.googleapis.com/css?family=Aladin" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css" />
     <link async href="http://fonts.googleapis.com/css?family=Open%20Sans" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css" />
@@ -77,7 +82,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="page-header" id="funcoes">
-                        <div class="texto">Algumas Funções</div>
+                        <div class="texto">Algumas Funcionalidades</div>
                         <link async href="http://fonts.googleapis.com/css?family=Aladin" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css" />
                         <link async href="http://fonts.googleapis.com/css?family=Open%20Sans" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css" />
                     </div>
@@ -119,11 +124,6 @@
                 </div>
             </div>
 
-            <div class="row contato">
-                <div class="col-xs-12">
-                    <p class="bg-success aviso">Preencha o formulário abaixo para entrar em contato conosco!</p>
-                </div>
-            </div>
 
             <div class="row contato">
                 <div class="col-xs-12">
@@ -168,7 +168,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" align="center">
-                    <img id="img_logo" src="imagens/logo/coliseu2.png">
+                    <img id="img_logo" src="imagens/logo/coliseu2.png" alt="ae">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 					</button>
@@ -278,4 +278,12 @@
         <!-- Bootstrap JavaScript -->
         <script src="js/padrao.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function() {
+  $('a').click(function(event) {
+    $('a').removeClass('selected');
+    $(this).addClass('selected');
+    event.preventDefault();
+  })
+});</script>
 </body>
