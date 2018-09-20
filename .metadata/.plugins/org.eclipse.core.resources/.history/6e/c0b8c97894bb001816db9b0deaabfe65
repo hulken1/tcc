@@ -1,0 +1,19 @@
+
+  	concatenate: function(){
+    	var self = this;
+    
+    	self.outputString = ''; // Reset output string
+    
+	    for(var i = 0, group; group = self.groups[i]; i++){
+	      	self.outputString += group.active;
+	    }
+    
+	    // If the output string is empty, show all rather than none:    
+	    !self.outputString.length && (self.outputString = 'all'); 
+	
+    	// Send the output string to MixItUp via the 'filter' method:    
+		if(self.$container.mixItUp('isLoaded')){
+	    	self.$container.mixItUp('filter', self.outputString);
+		}
+  	}
+};

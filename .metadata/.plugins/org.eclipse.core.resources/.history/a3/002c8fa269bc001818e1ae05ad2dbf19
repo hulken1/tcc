@@ -1,0 +1,73 @@
+package br.com.arena21.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import br.com.arena21.connection.Conexao;
+
+public class SalaDao {
+
+	//Variável contendo a conexão
+	private Connection conexao;
+	
+	//Construtor
+	public SalaDao(){
+		this.conexao = Conexao.obterConexao();
+	}
+	
+	//Método para retornar as salas
+	public String exibirSalas(){
+		
+
+		//Estrutura
+		String estrutura = "";
+
+		//Tenta executar a ação
+		try{
+		
+		//SQL
+		String sql = "SELECT * FROM salas";
+		
+		//Obter dados das salas
+		Statement stmt = this.conexao.createStatement();
+		ResultSet rs = stmt.executeQuery(sql);
+		int indice = 0;
+			while(rs.next()){
+				
+				if(indice % 4 == 0){
+					estrutura +="<div class='row'>";
+				}
+				
+				estrutura += "<div class='col-md-3' id='thumbImage'>";
+				estrutura += "<div class='container'>";
+				estrutura += "<div class='jumbotron'>";
+				estrutura += "<div class='page-header'>";
+					estrutura += "<h1 class='texto'>"+rs.getString("nomeSala")+"</h1>";
+					estrutura +="<br>";			
+					estrutura += "<h1 class='texto'>"+rs.getString("nomeJogo")+"</h1>"+"</div>"; 							                     
+							estrutura += "<button class='btn btn-primary' id='botaoEntrar'>Entrar</button>";
+						estrutura += "</div>";
+						estrutura += "</div>";
+						estrutura += "</div>";
+						estrutura += "</div>";
+				
+			if(indice % 4 == 0){
+				estrutura +="</div'>";
+			}
+			
+			//Incrementar o índice
+			indice++;
+			
+			}
+			
+		}catch(Exception e){
+			
+		}
+		
+		//Retorno
+		return estrutura;
+		
+	}
+	
+}

@@ -1,0 +1,13 @@
+
+#thumbImage {
+    display: inline-block;
+    width: 20%;
+    height:260px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+	background-color:blue;
+}
+#botaoEntrar{
+	width: 60px;
+}

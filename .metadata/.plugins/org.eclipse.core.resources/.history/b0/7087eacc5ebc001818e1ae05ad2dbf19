@@ -1,0 +1,63 @@
+package br.com.arena21.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import br.com.arena21.connection.Conexao;
+
+public class SalaDao {
+
+	//Variável contendo a conexão
+	private Connection conexao;
+	
+	//Construtor
+	public SalaDao(){
+		this.conexao = Conexao.obterConexao();
+	}
+	
+	//Método para retornar as salas
+	public String exibirSalas(){
+		
+
+		//Estrutura
+		String estrutura = "";
+
+		//Tenta executar a ação
+		try{
+		
+		//SQL
+		String sql = "SELECT * FROM salas";
+		
+		//Obter dados das salas
+		Statement stmt = this.conexao.createStatement();
+		ResultSet rs = stmt.executeQuery(sql);
+		int indice = 0;
+			while(rs.next()){
+				
+				if(indice % 4 == 0){
+					estrutura +="<div class='row'>";
+				}
+	
+				estrutura+= "<div class='ui four column relaxed grid'>";
+				estrutura+= "<div class='column'>";
+				
+			if(indice % 4 == 0){
+				estrutura +="</div'>";
+			}
+			
+			//Incrementar o índice
+			indice++;
+			
+			}
+			
+		}catch(Exception e){
+			
+		}
+		
+		//Retorno
+		return estrutura;
+		
+	}
+	
+}

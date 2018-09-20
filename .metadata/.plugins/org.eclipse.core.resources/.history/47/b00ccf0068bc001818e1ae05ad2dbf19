@@ -1,0 +1,22 @@
+
+#thumbImage {
+    display: inline-block;
+    position:relative;
+    width: 20%;
+    height:260px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+	background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+	
+}
+#botaoEntrar{
+	height: 30px;
+	width: 100%;
+	margin-top:198px;
+	background: linear-gradient(to right, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+}
+.jumbotron h1{
+	text-align: center;
+	font-size: 20px;
+}

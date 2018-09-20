@@ -1,0 +1,318 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #331d35;
+    background-color: #e7e7e7;
+}
+
+a {
+    color: #41307c;
+    text-decoration: none;
+}
+
+
+
+.menu {
+    background-color: transparent;
+    border-radius: 10%;
+    margin: 10px;
+    float: right;
+    position: static;
+    opacity: 0.7;
+}
+.botaologin {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 6px 20px 6px 53px;
+    border: none;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font: normal 18px/normal "Quantico", Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: url("http://enjoycss.com/bg-img/custom/93390-1g1zr84.6pqe.png"), rgba(140, 237, 116, 1);
+    background-repeat: no-repeat;
+    background-position: 14px 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: 24px auto;
+    background-size: 24px auto;
+    -webkit-box-shadow: 1px 1px 0 0 #599f3f;
+    box-shadow: 1px 1px 0 0 #599f3f;
+    text-shadow: 1px 1px 0 rgba(168, 168, 168, 0.66);
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  #sideLateral a {
+    position: absolute;
+    left: -75px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+#sideLateral a:hover {
+    left: 0;
+}
+#sobre {
+    top: 80px;
+    background-color: #555;
+}
+#cadastro{
+    top: 140px;
+    background-color:white;
+}
+#menuLateral img{
+   margin-left: 15px;
+}
+#salas {
+    top: 200px;
+    background-color: #555
+}
+  .botaologin span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .botaologin span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .botaologin:hover span {
+    padding-right: 25px;
+  }
+  
+  .botaologin:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.divslider {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    background-color: transparent;
+}
+
+.carousel-inner {
+    height: 400px;
+}
+
+section {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    min-height: 60vh;
+}
+
+.texto {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: normal 40px/1 "Aladin", Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    text-transform: normal;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 1px 1px 0 rgba(140, 140, 140, 0.6), -1px -1px 1px rgba(0, 0, 0, 0.67);
+}
+
+#servicos {
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
+
+#funcoes {
+    border: none;
+}
+
+#login-modal .modal-dialog {
+    width: 350px;
+}
+
+#login-modal input[type=text],
+input[type=password] {
+    margin-top: 10px;
+}
+
+#div-login-msg,
+#div-lost-msg,
+#div-register-msg {
+    border: 1px solid #dadfe1;
+    height: 30px;
+    line-height: 28px;
+    transition: all ease-in-out 500ms;
+}
+
+#div-login-msg.success,
+#div-lost-msg.success,
+#div-register-msg.success {
+    border: 1px solid #68c3a3;
+    background-color: #c8f7c5;
+}
+
+#div-login-msg.error,
+#div-lost-msg.error,
+#div-register-msg.error {
+    border: 1px solid #eb575b;
+    background-color: #ffcad1;
+}
+
+#icon-login-msg,
+#icon-lost-msg,
+#icon-register-msg {
+    width: 30px;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+    background-color: #dadfe1;
+    margin-right: 5px;
+    transition: all ease-in-out 500ms;
+}
+
+#icon-login-msg.success,
+#icon-lost-msg.success,
+#icon-register-msg.success {
+    background-color: #68c3a3 !important;
+}
+
+#icon-login-msg.error,
+#icon-lost-msg.error,
+#icon-register-msg.error {
+    background-color: #eb575b !important;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .8;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    outline: 0;
+}
+
+.modal-header {
+    background-color: transparent;
+    min-height: 16.43px;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 0px;
+}
+
+.modal-body {
+    color: white;
+    position: relative;
+    padding: 5px 15px 5px 15px;
+}
+
+.modal-footer {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border-top: 0px;
+}
+
+.checkbox {
+    margin-bottom: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.btn-lg,
+.btn-group-lg>.btn {
+    border-radius: 0px;
+}
+
+.btn-link {
+    padding: 5px 10px 0px 0px;
+    color: #95a5a6;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.glyphicon {
+    top: 740px;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.btnLogin {
+    text-align: center;
+    color: black;
+    font-size: 23px;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%);
+}
+
+section#contato {
+    min-height: 50vh;
+}
+
+.contato textarea {
+    height: 170px;
+}
+
+#faleconosco{
+    border: none;
+}

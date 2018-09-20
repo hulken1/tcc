@@ -1,0 +1,22 @@
+
+#thumbImage {
+    display: inline-block;
+    position:relative;
+    width: 20%;
+    height:260px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+	background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+	
+}
+#botaoEntrar{
+	height: 30px;
+	width: 100%;
+	margin-top:198px;
+	background: linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+}
+.jumbotron h1{
+	text-align: center;
+	font-size: 20px;
+}

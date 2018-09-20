@@ -38,17 +38,20 @@ public class SalaDao {
 				if(indice % 4 == 0){
 					estrutura +="<div class='row'>";
 				}
-		
-			estrutura += "<div class='col-md-3' id='thumbImage'>";
-				estrutura += "<div class='thumbnail' data-filter='"+rs.getString("nomeJogo")+"'>";
-					estrutura += "<h1 style='color:white'>"+rs.getString("nomeSala")+"</h1>";
-					estrutura += "<img src='img/img-1.jpg' alt='...'>";
-					estrutura += "<div class='caption'>";                       
-						estrutura += "<p><a href='#' class='btn btn-primary' role='button'>Entrar</a></p>";
-					estrutura += "</div>";
-				estrutura += "</div>";
-			estrutura += "</div>";
-			
+				
+				estrutura += "<div class='col-md-3' id='thumbImage'>";
+				estrutura += "<div class='container'>";
+				estrutura += "<div class='jumbotron'>";
+				estrutura += "<div class='page-header'>";
+					estrutura += "<h1 class='texto'>"+rs.getString("nomeSala")+"</h1>";
+					estrutura +="<br>";			
+					estrutura += "<h1 class='texto'>"+rs.getString("nomeJogo")+"</h1>"; 							                     
+							estrutura += "<button class='btn btn-primary' id='botaoEntrar'>Entrar</button>";
+						estrutura += "</div>";
+						estrutura += "</div>";
+						estrutura += "</div>";
+						estrutura += "</div>";
+				
 			if(indice % 4 == 0){
 				estrutura +="</div'>";
 			}
