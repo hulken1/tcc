@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+2018-09-20 10:58:12,304 [Worker-4: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+=======
 2018-09-12 19:24:42,054 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
 2018-09-12 19:29:34,290 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2018-09-12 20:00:27,016 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+>>>>>>> branch 'master' of https://github.com/hulken1/tcc.git

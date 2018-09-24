@@ -1,2 +1,10 @@
+<<<<<<< HEAD
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
 eclipse.preferences.version=1
 overviewRuler_migration=migrated_3.1
+=======
+eclipse.preferences.version=1
+overviewRuler_migration=migrated_3.1
+>>>>>>> branch 'master' of https://github.com/hulken1/tcc.git

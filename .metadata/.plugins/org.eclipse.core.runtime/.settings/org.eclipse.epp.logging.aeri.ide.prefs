@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 eclipse.preferences.version=1
 resetSendMode=KEEP
 resetSendModeOn=0
 sendMode=NOTIFY
+=======
+eclipse.preferences.version=1
+resetSendMode=KEEP
+resetSendModeOn=0
+sendMode=NOTIFY
+>>>>>>> branch 'master' of https://github.com/hulken1/tcc.git

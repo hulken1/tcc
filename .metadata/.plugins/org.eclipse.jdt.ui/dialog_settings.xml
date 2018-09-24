@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="JavaElementSearchActions">
+	</section>
+</section>
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
@@ -17,3 +24,4 @@
 	<section name="JavaElementSearchActions">
 	</section>
 </section>
+>>>>>>> branch 'master' of https://github.com/hulken1/tcc.git

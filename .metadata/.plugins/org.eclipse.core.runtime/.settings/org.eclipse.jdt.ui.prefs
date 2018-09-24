@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=14
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
+=======
 content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000
 content_assist_number_of_computers=24
 content_assist_proposals_background=255,255,255
@@ -19,3 +28,4 @@ spelling_locale_initialized=true
 tabWidthPropagated=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true
+>>>>>>> branch 'master' of https://github.com/hulken1/tcc.git

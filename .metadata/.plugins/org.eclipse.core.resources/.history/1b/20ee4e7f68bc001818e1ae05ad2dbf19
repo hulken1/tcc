@@ -1,4 +1,4 @@
-package br.com.arena21.dao;
+ackage br.com.arena21.dao;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
