@@ -5,11 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-
-
-import br.com.arena21.bean.CadastroSalaBEAN;
-import br.com.arena21.connection.conexao;
-
 public class SalaDao {
 
 	//Variável contendo a conexão
@@ -18,7 +13,7 @@ public class SalaDao {
 	//Construtor
 
 	//Método para retornar as salas
-	public String exibirSalas(){
+	public String exibindoSalas(){
 		
 
 		//Estrutura
@@ -40,18 +35,14 @@ public class SalaDao {
 					estrutura +="<div class='row'>";
 				}
 				
-				estrutura += "<div class='container'>";
-				estrutura += "<div class='col-md-3' id='thumbImage'>";
-						estrutura +="<div class='mix' style:display:none>";
-						estrutura +="<ul>";
-						estrutura +="<li >"+rs.getString("nomeSala")+"</li>";
-						estrutura += "<li class='title' class='texto'>"+rs.getString("nomeJogo")+"</li>"; 						
-						estrutura += "</ul>";
-						estrutura += "</div";
-						estrutura += "</div>";									                     					
+						estrutura += "<div class='container'>";
+						estrutura += "<div class='col-md-3' id='thumbImage'>";				
+						estrutura += "<tr>Jogo: <td>"+rs.getString("nomeJogo")+"</td></tr>";
+						estrutura += "<tr>Sala: <td>"+rs.getString("nomeSala")+"</td></tr>";
+						estrutura += "</div>";		
 						estrutura += "</div>";
 						estrutura += "<button class='btn btn-primary' id='botaoEntrar'>Entrar</button>";
-			
+
 				
 			if(indice % 4 == 0){
 				estrutura +="</div'>";

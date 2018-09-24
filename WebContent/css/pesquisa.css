@@ -7,24 +7,37 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
-	background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+	background-image: url("../imagens/fundo/fundosala.jpg");
 	
 }
-#botaoEntrar{
-	height: 30px;
-	width: 100%;
-	margin-top:198px;
-	color:white;
-background: -webkit-linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(71,71,71,1) 0%, rgba(102,102,102,1) 7%, rgba(89,89,89,1) 12%, rgba(44,44,44,1) 24%, rgba(0,0,0,1) 38%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
-background: -moz-linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(71,71,71,1) 0%, rgba(102,102,102,1) 7%, rgba(89,89,89,1) 12%, rgba(44,44,44,1) 24%, rgba(0,0,0,1) 38%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
-background: -o-linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(71,71,71,1) 0%, rgba(102,102,102,1) 7%, rgba(89,89,89,1) 12%, rgba(44,44,44,1) 24%, rgba(0,0,0,1) 38%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
-background: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(76,76,76,1)), color-stop(0, rgba(71,71,71,1)), color-stop(0.07, rgba(102,102,102,1)), color-stop(0.12, rgba(89,89,89,1)), color-stop(0.24, rgba(44,44,44,1)), color-stop(0.38, rgba(0,0,0,1)), color-stop(0.6, rgba(17,17,17,1)), color-stop(0.76, rgba(43,43,43,1)), color-stop(0.91, rgba(28,28,28,1)), to(rgba(19,19,19,1)));
-background: linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(71,71,71,1) 0%, rgba(102,102,102,1) 7%, rgba(89,89,89,1) 12%, rgba(44,44,44,1) 24%, rgba(0,0,0,1) 38%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
-}
 
+#botaoEntrar{
+	width: 100%;
+	margin-top:140px;	
+	text-align:center;
+}
+#botaoEntrar {
+	border: none;
+	background: #000000;
+	color: #ffffff !important;
+	font-weight: 100;
+	padding: 20px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+#botaoEntrar:hover {
+	color: #ed3330 !important;
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	background: none;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
 .jumbotron h1{
 	text-align: center;
 	font-size: 20px;
+	color:black;
 }
 	
 input {
@@ -33,4 +46,7 @@ input {
 
 .title {
   font-weight: 2em;
+}
+#estado1{
+	margin-bottom: 5px;
 }
